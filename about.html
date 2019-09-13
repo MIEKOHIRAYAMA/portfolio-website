@@ -6,18 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
     <link href="img/favicon32x32px.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto:300,500,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-            <div class="logo"><a href="#"><img src="Img/logo_mieko.design 240x50px.png"></a>
-            </div>
-            <nav>
-                <ul>
-                     <li><a class="active" href="index.html">Work</a></li>
-                     <li><a href="about.html">About</a></li>
-                     <li> <a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo" style="max-width:240px;"><a href="index.html"><img src="Img/logo_mieko.design 240x50px.svg"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html#my-work-section">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="about-me-section">
@@ -25,13 +28,10 @@
         </div>
         <div class="my-story">
             <picture>
-                <source srcset="img/about/300x300.png" media="(max-width:300px)" />
-                <source srcset="img/about/600x600.png" media="(max-width:600px)" />
-                <source srcset="img/about/900x900.png" media="(max-width:900px)" />
                 <img
-                  src="img/about/profile@1.jpg"
+                  src="img/about/600x600.png"
                   alt="Profile Picture"
-                  style="float:centre"
+                  style="float:centre; max-width: 400px"
                 />
             <div class="my-story">
                 <p1>
@@ -70,38 +70,34 @@
  
     </main>
     <footer id="contact">
-        <div class="footer">
-            <div class="container">
-                <h2>Get in touch</h2>
-                <p>
-                    Do you like my work and want to discuss opportunities? Please get in touch.
-                </p>
+            <div class="footer">
+                <div class="container">
+                    <h2>Get in touch</h2>
+                    <p>
+                        Do you like my work and want to discuss opportunities? Please get in touch.
+                    </p>
+                    <div>
+                        <a href="mailto:uzurachan.hide.and.seek@gmail.com" class="button contact">Email me</a>
+                    </div>
+                    <a href="files/cv.pdf" class="button contact" target="_blank">Open my CV</a>
+        
+                    <div>
+                        <a href="https://uk.linkedin.com/in/mieko-h-36a02b188"
+                        target="_blank">
+                        <img
+                        src="img/linkedin.svg"
+                        alt="linkedin-logo"
+                        style="max-width: 25px"
+                        />
+                        </a>
+                    </div>
                 <div>
-                    <a href="uzurachan.hide.and.seek@gmail.com">Email me</a>
+                    <p>
+                        Copyright Mieko Hirayama 2019
+                    </p>
                 </div>
-                <a href="files/cv.pdf" target="_blank">Open my CV</a>
-                
-                <div>
-                    <a href="https://uk.linkedin.com/in/mieko-h-36a02b188"
-                    target="_blank">
-                    <img
-                    src="img/linkedin.svg"
-                    alt="linkedin-logo"
-                    style="max-width: 25px"
-                    />
-                    </a>
-                </div>
-            
             </div>
-            <div>
-                <p>
-                    Copyright Mieko Hirayama 2019
-                </p>
-            </div>
-        </div>
-    </footer>
-     
-      
-      
-</body>
-</html>
+           </footer>
+              
+        </body>
+        </html>
