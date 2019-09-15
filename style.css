@@ -4,18 +4,52 @@ Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
 
+header {
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+  }
+
+nav ul {
+    list-style-type:none;
+    margin: 20px;
+    float: right;
+}
+
+nav li {
+    display: inline;
+    padding: 0 30px;
+    font-weight: 400;
+}
+
 body {
     background-color:#FFF;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /*Sets the font size to 16px */
     font-weight: 300; /*Sets the font weight to 300 */
     line-height: 1.6; /*Sets the line-height to 1.6 * the font size */
-    color:#494848 
+    color:#494848;
+    margin: 40px;
+
 }
+
+* {
+    box-sizing: border-box;
+  }
 
 img {
     width: 100%;
+    float: center;
 }
+
+picture {
+    float: center;
+}
+
+.picture.main-sustainability {
+float: right;
+}
+
 
 h1, h2, h3, h4 {
     font-family: 'Oxygen', sans-serif;
@@ -23,7 +57,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 4em;
     font-weight: 700;
 }
 
@@ -58,7 +92,6 @@ a:visited { /* visited link */
 
 a:hover{
     color:#2e2ccc;
-    text-decoration: underline; /*underlining when hovering over a link*/
 }
 
 a:active { /* selected link */
@@ -70,10 +103,11 @@ a:active { /* selected link */
     background-color: #30c9d4;
     color: #ffffff !important; /* needed to override the default link color */
     font-weight: 400;
-    padding: 3px 30px;
+    padding: 3px 40px;
     border-radius: 15px;
     border-bottom: 2px solid #056468; /* width of the border, type, color */
     transition: 0.2s opacity;
+    margin: 5px 0;
     }
 
 .button:hover {
@@ -93,3 +127,38 @@ a:active { /* selected link */
     color: #ffffff !important;
     }
 
+.hero-section {
+    margin:10px;
+    padding: 10px;
+}
+
+.my-work-section {
+    margin: 10px;    
+    }
+
+.text {
+    padding: 0px 10px 0px 10px;
+    margin: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 10px;
+    float: center;
+    
+}
+
+.row {
+    margin:20px 0px;
+}
+
+.clearfix::after {
+    content: "container";
+    clear: both;
+    display: table;
+  }
+
+#contact {
+    text-align: ceter;
+    float: center;
+}
