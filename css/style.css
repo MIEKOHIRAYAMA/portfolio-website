@@ -1,8 +1,39 @@
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Primary Color (Blue): ##30c9d4;
+Secondary Color (Green): #056468;
 */
+
+
+header {
+    background-color:#FFF;
+    position: fixed;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+nav {
+    padding-right: 40px;
+}
+
+.logo {
+    width: 240px;
+    float: left;
+    padding: 0px;
+}
+
+nav li {
+    display: inline;
+    padding: 0 30px;
+    font-weight: 400;
+    list-style-type:none;
+    text-align: center;
+}
+
+main {
+    padding-top:133px;
+    margin: 0 40px;
+}
 
 body {
     background-color:#FFF;
@@ -10,11 +41,20 @@ body {
     font-size: 16px; /*Sets the font size to 16px */
     font-weight: 300; /*Sets the font weight to 300 */
     line-height: 1.6; /*Sets the line-height to 1.6 * the font size */
-    color:#494848 
+    color:#494848;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
+* {
+    box-sizing: border-box;
+  }
 
 img {
     width: 100%;
+    max-width:500px;
 }
 
 h1, h2, h3, h4 {
@@ -23,9 +63,32 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 3em;
     font-weight: 700;
 }
+
+.hero-section-text {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid Aquamarine ; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: Aquamarine ; }
+  }
 
 h2 {
     font-size: 2.25em;
@@ -35,6 +98,7 @@ h2 {
 h3 {
     font-size: 1.75em;
     font-weight: 400;
+    margin:0;
 }
 
 h4 {
@@ -43,8 +107,12 @@ h4 {
 }
 
 span {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight:400;
+}
+
+p {
+    text-align: justify;
 }
 
 a{
@@ -58,7 +126,6 @@ a:visited { /* visited link */
 
 a:hover{
     color:#2e2ccc;
-    text-decoration: underline; /*underlining when hovering over a link*/
 }
 
 a:active { /* selected link */
@@ -70,10 +137,12 @@ a:active { /* selected link */
     background-color: #30c9d4;
     color: #ffffff !important; /* needed to override the default link color */
     font-weight: 400;
-    padding: 3px;
+    padding: 3px 40px;
     border-radius: 15px;
     border-bottom: 2px solid #056468; /* width of the border, type, color */
-    transition: 0.2s opacity;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    margin: 5px 0;
     }
 
 .button:hover {
@@ -93,3 +162,172 @@ a:active { /* selected link */
     color: #ffffff !important;
     }
 
+#my-work-section h2 {
+    text-align: center;
+}
+
+.my-work-section {
+    margin: 10px;    
+    }
+
+.text {
+    padding: 0px 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.text1 {
+    padding: 0px 20px 0px 0px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.text2 {
+    padding: 0px 0px 0px 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.picture-profile {
+    max-width: 300px;
+    float: center;
+    margin:70px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.copyright {
+    float: left;
+}
+
+.container3 > skills {
+    list-style: none;
+}
+
+.my-story {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.img-home-product {
+    max-width: 500px;
+}
+
+.rec-user-analysis {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.rec-user-jouney {
+    display:flex;
+    flex-direction:column;
+}
+
+.picture-sketch {
+    text-align: center;
+}
+
+.row {
+    margin:20px 0px;
+}
+
+.row2 {
+    margin:50px 0px;
+}
+
+.footer {
+    margin: 0 40px;
+    text-align: center;
+}
+
+.animation {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+}
+	
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+nav li {
+    float: right;
+}
+
+
+h1 {
+    font-size: 3.4em;
+    font-weight: 700;
+}
+
+.text1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#my-work-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-story {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture-profile {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .container-profile {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 10px;
+    }
+    .container3 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+    }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
