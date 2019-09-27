@@ -17,17 +17,28 @@ nav {
 }
 
 .logo {
-    width: 240px;
-    float: left;
+    width: 213px;
     padding: 0px;
 }
 
+
 nav li {
-    display: inline;
     padding: 0 30px;
     font-weight: 400;
     list-style-type:none;
-    text-align: center;
+}
+
+
+nav li :last-child {
+    float:right;
+}
+
+.navtoggle.responsive li  {
+    display: block;
+  }
+  
+.navtoggle li:not(:first-child):not(:last-child) {
+    display: none;
 }
 
 main {
@@ -63,32 +74,9 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1.4em;
     font-weight: 700;
 }
-
-.hero-section-text {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid Aquamarine ; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: Aquamarine ; }
-  }
 
 h2 {
     font-size: 2.25em;
@@ -115,14 +103,37 @@ p {
     text-align: justify;
 }
 
-a{
+.hero-section-text {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid Aquamarine ; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: Aquamarine ; }
+}
+
+a {
     color: #494848; 
     text-decoration: none; /*No underlining */
 }
 
 a:visited { /* visited link */
     color: #494848;
-  }
+}
 
 a:hover{
     color:#2e2ccc;
@@ -130,7 +141,7 @@ a:hover{
 
 a:active { /* selected link */
     color: #994c30;
-  }
+}
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -143,24 +154,24 @@ a:active { /* selected link */
     transition-duration: 0.2s;
     transition-property: opacity;
     margin: 5px 0;
-    }
+}
 
 .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
-    }
+}
 
 .button.contact {
     background-color: transparent;
     color: #30c9d4 !important;
     text-transform: uppercase;
     border: 2px solid #30c9d4;
-    }
+}
 
 .button.contact:hover {
     background-color: #30c9d4;
     color: #ffffff !important;
-    }
+}
 
 #my-work-section h2 {
     text-align: center;
@@ -168,7 +179,7 @@ a:active { /* selected link */
 
 .my-work-section {
     margin: 10px;    
-    }
+}
 
 .text {
     padding: 0px 20px;
@@ -202,8 +213,9 @@ a:active { /* selected link */
     float: left;
 }
 
-.container3 > skills {
+.container3 > .skills > ul {
     list-style: none;
+    padding: none;
 }
 
 .my-story {
@@ -255,10 +267,22 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
+.logo {
+    float: left;
+    display: block;
+}
+
 nav li {
     float: right;
 }
 
+.navtoggle li:last-child {
+    display:none;
+}
+
+.navtoggle li:not(:first-child):not(:last-child) {
+    display:inline-block;
+}
 
 h1 {
     font-size: 3.4em;
