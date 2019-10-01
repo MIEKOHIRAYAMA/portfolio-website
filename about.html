@@ -9,36 +9,47 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto:300,500,900&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
-            <nav>
-                <ul>
-                    <li class="logo"> <a href="index.html"><img src="Img/logo_mieko.design 240x50px.svg"></a></li>
-                    <li><a class="active" href="#my-work-section">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                <img src="Img/logo_mieko.design 240x50px.svg" alt="logo">
+                </a>
+            </div>
+            <ul>
+              <li>
+                <img class="hamburger-menu-button" src="https://image.flaticon.com/icons/png/128/462/462998.png" alt="" style="width:25;height:25px">
+              </li>
+              <li class="menu-item"><a href="index.html#my-work-section">Work</a></li>
+              <li class="menu-item"><a href="about.html">About</a></li>
+              <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
     <main>
         <div class="about-me-section">
             <h2>About Me</h2>
         </div>
         <div class="container-profile">
-            <div class="picture-profile">
-                <img
-                  src="img/about/600x600.png"
-                  alt="Profile Picture"
-                />
-            </div>
-            <div class="my-story">
-                <p1>
-                    Hello, this is Mieko and I’m originally from Japan & a front office banker-turned-UX designer. As a banker I specialised in FX, loan/deposits and payments. I have 10 years of client experience, highly skilled in listening to client business needs, negotiating and building relationships. The key to good client communication is to investigate an issue that the client is facing and finding a solution that will satisfy the customer. I apply the same principles in my UX design and provide a creative solution to the problem. Now, I’m looking forward to applying the same client empathy skills to my UX design in a digital product.
-                    <br>
-                    On my days off, I spend my time with my daughter who just turned 2 years old. She’s recently learnt how to sing “ABCs” so don’t be frightened if you see me humming the song on my own when I’m around. Other than that, I like to get my sewing machine and alter my clothes or invite friends around and socialise over a glass of wine.
-                </p1>
-            </div>
+                <div class="picture-profile">
+                    <img
+                        src="img/about/600x600.png"
+                        alt="Profile Picture"
+                    />
+                </div>
+                <div class="my-story">
+                    <p1>
+                        Hello, this is Mieko and I’m originally from Japan & a front office banker-turned-UX designer. As a banker I specialised in FX, loan/deposits and payments. I have 10 years of client experience, highly skilled in listening to client business needs, negotiating and building relationships. The key to good client communication is to investigate an issue that the client is facing and finding a solution that will satisfy the customer. I apply the same principles in my UX design and provide a creative solution to the problem. Now, I’m looking forward to applying the same client empathy skills to my UX design in a digital product.
+                        <br>
+                        On my days off, I spend my time with my daughter who just turned 2 years old. She’s recently learnt how to sing “ABCs” so don’t be frightened if you see me humming the song on my own when I’m around. Other than that, I like to get my sewing machine and alter my clothes or invite friends around and socialise over a glass of wine.
+                    </p1>
+                </div>
         </div>
         
         <div class="row2">
@@ -76,41 +87,40 @@
  
     </main>
     <footer id="contact">
-            <div class="footer">
-                <div class="container">
-                    <h2>Get in touch</h2>
-                    <p>
-                        Do you like my work and want to discuss opportunities? Please get in touch.
-                    </p>
-                    <div>
-                        <a href="mailto:uzurachan.hide.and.seek@gmail.com" class="button contact">Email me</a>
-                    </div>
-         
+        <div class="footer">
+            <h2>Get in touch</h2>
+            <p>
+                Do you like my work and want to discuss opportunities? Please get in touch.
+            </p>
+            <div>
+                <a href="mailto:uzurachan.hide.and.seek@gmail.com" class="button contact">Email me</a>
+            </div>
+    
             <div class="row">
             </div>
                 
-                    <a href="files/cv.pdf" class="button contact" target="_blank">Open my CV</a>
+            <a href="files/cv.pdf" class="button contact" target="_blank">Open my CV</a>
             
             <div class="row">
             </div>
-            
-                    <div>
-                        <a href="https://uk.linkedin.com/in/mieko-h-36a02b188"
-                        target="_blank">
-                        <img
-                        src="img/linkedin.svg"
-                        alt="linkedin-logo"
-                        style="max-width: 25px"
-                        />
-                        </a>
-                    </div>
-                <div>
-                    <p>
-                        Copyright Mieko Hirayama 2019
-                    </p>
-                </div>
+    
+            <div>
+                <a href="https://uk.linkedin.com/in/mieko-h-36a02b188"
+                target="_blank">
+                <img
+                src="img/linkedin.svg"
+                alt="linkedin-logo"
+                style="max-width: 25px"
+                />
+                </a>
             </div>
-           </footer>
-              
-        </body>
-        </html>
+            <div class="copyright">
+                <p>
+                    Copyright Mieko Hirayama 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

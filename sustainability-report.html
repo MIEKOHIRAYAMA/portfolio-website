@@ -9,18 +9,29 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto:300,500,900&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body data-gr-c-s-loaded="true">
-        <header id="header">
-                <nav>
-                    <ul>
-                        <li class="logo"> <a href="index.html"><img src="Img/logo_mieko.design 240x50px.svg"></a></li>
-                        <li><a class="active" href="#my-work-section">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                <img src="Img/logo_mieko.design 240x50px.svg" alt="logo">
+                </a>
+            </div>
+            <ul>
+              <li>
+                <img class="hamburger-menu-button" src="https://image.flaticon.com/icons/png/128/462/462998.png" alt="" style="width:25;height:25px">
+              </li>
+              <li class="menu-item"><a href="index.html#my-work-section">Work</a></li>
+              <li class="menu-item"><a href="about.html">About</a></li>
+              <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
     <main>
         <div class="hero-section">
             <div class="hero-picture-section">
@@ -174,13 +185,13 @@
                         />
                         </a>
                     </div>
-                <div>
+                <div class="copyright">
                     <p>
                         Copyright Mieko Hirayama 2019
                     </p>
                 </div>
             </div>
            </footer>
-              
+           <script src="js/script.js"></script>   
         </body>
         </html>
