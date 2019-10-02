@@ -30,7 +30,6 @@ nav {
     /* justify-content:space-between takes care of spacing be logo and hamburger menu items*/
     justify-content: space-between;
     padding: 20px 30px;
-
 }
 
 ul {
@@ -57,7 +56,11 @@ ul.show-menu-item .menu-item {
     padding: 30px, 0px;
 }
 
-
+.hamburger-menu-button {
+    width:30px;
+    height:25px;
+    padding-right:10px;
+}
 
 main {
     padding-top:133px;
