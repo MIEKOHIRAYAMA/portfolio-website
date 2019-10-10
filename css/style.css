@@ -2,23 +2,28 @@
 Colors used:
 Primary Color (Blue): ##30c9d4;
 Secondary Color (Green): #056468;
+Text Color : #494848
 */
 
 
 header {
-    background-color:#FFF;
+    background-color: #FFF;
     position: fixed;
     width: 100%;
     max-width: 1000px;
-  }
+    padding: 0px;
+}
 
 body {
-    background-color:#FFF;
+    background-color: #FFF;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; /*Sets the font size to 16px */
-    font-weight: 300; /*Sets the font weight to 300 */
-    line-height: 1.6; /*Sets the line-height to 1.6 * the font size */
-    color:#494848;
+    font-size: 16px;
+    /*Sets the font size to 16px */
+    font-weight: 300;
+    /*Sets the font weight to 300 */
+    line-height: 1.6;
+    /*Sets the line-height to 1.6 * the font size */
+    color: #494848;
     max-width: 1000px;
     padding: 0 30px;
     margin-left: auto;
@@ -29,55 +34,58 @@ nav {
     display: flex;
     /* justify-content:space-between takes care of spacing be logo and hamburger menu items*/
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 30px 10px 0px;
 }
 
 ul {
     list-style: none;
-    text-align: right;
 }
 
 ul .menu-item {
     display: none;
-    padding: 0 30px;
-    padding: 0 30px;
-    font-weight: 400;
-    list-style-type:none;
+    padding: 10px 30px 0px 0px;
+    font-weight: 700;
+    list-style-type: none;
     list-style: none;
     text-align: right;
 }
 
 ul.show-menu-item .menu-item {
     display: block;
-  }
+}
 
 .logo {
     width: 213px;
-    padding: 30px, 0px;
+    padding: none;
 }
 
 .hamburger-menu-button {
-    width:30px;
-    height:25px;
-    padding-right:10px;
+    width: 30px;
+    height: 25px;
+    padding-right: 10px;
 }
 
 main {
-    padding-top:133px;
+    padding-top: 133px;
     margin: 0px;
 }
 
 
 * {
     box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;
+}
 
 img {
     width: 100%;
-    max-width:500px;
+    max-width: 500px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Oxygen', sans-serif;
     line-height: 1.4;
 }
@@ -95,7 +103,7 @@ h2 {
 h3 {
     font-size: 1.75em;
     font-weight: 400;
-    margin:0;
+    margin: 0;
 }
 
 h4 {
@@ -104,69 +112,102 @@ h4 {
 }
 
 span {
-    font-size: 0.8em;
-    font-weight:400;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 p {
     text-align: justify;
 }
 
-.hero-section-text {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid Aquamarine ; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+.hero-section {
+    margin: 30px 0;
 }
-  
+
+#my-work-section {
+    margin: 150px 0;
+}
+
+h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .07em solid Aquamarine;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .07em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
 /* The typing effect */
+
 @keyframes typing {
-from { width: 0 }
-to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-from, to { border-color: transparent }
-50% { border-color: Aquamarine ; }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: Aquamarine;
+    }
 }
 
 a {
-    color: #494848; 
-    text-decoration: none; /*No underlining */
+    color: #494848;
+    text-decoration: none;
+    /*No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+    /* visited link */
     color: #494848;
 }
 
-a:hover{
-    color:#2e2ccc;
+a:hover {
+    color: #2e2ccc;
 }
 
-a:active { /* selected link */
+a:active {
+    /* selected link */
     color: #994c30;
 }
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #30c9d4;
-    color: #ffffff !important; /* needed to override the default link color */
+    color: #494848 !important;
+    /* needed to override the default link color */
     font-weight: 400;
     padding: 3px 40px;
     border-radius: 15px;
-    border-bottom: 2px solid #056468; /* width of the border, type, color */
+    border-bottom: 2px solid #056468;
+    /* width of the border, type, color */
     transition-duration: 0.2s;
     transition-property: opacity;
     margin: 5px 0;
 }
 
 .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -187,7 +228,7 @@ a:active { /* selected link */
 }
 
 .my-work-section {
-    margin: 10px;    
+    margin: 10px;
 }
 
 .text {
@@ -211,25 +252,40 @@ a:active { /* selected link */
 .picture-profile {
     max-width: 300px;
     float: center;
-    margin:70px;
+    margin: 50px auto;
+}
+
+.my-photos {
+    display: block;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.my-photos img {
+    max-width: 100%;
 }
 
 .footer p {
     text-align: center;
+    margin: 0 0;
 }
 
 .copyright {
     float: left;
 }
 
-.container3 > .skills > ul {
+.container3>.skills {
     list-style: none;
     padding: none;
+    text-align: center;
 }
 
 .my-story {
     max-width: 400px;
     text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .img-home-product {
@@ -242,8 +298,8 @@ a:active { /* selected link */
 }
 
 .rec-user-jouney {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 .picture-sketch {
@@ -251,24 +307,24 @@ a:active { /* selected link */
 }
 
 .row {
-    margin:20px 0px;
+    margin: 20px 0px;
 }
 
 .row2 {
-    margin:50px 0px;
+    margin: 50px 0px;
 }
 
 .footer {
-    margin: 0 40px;
+    margin: 100px 0 0 0;
     text-align: center;
 }
 
 .animation {
-    width: 100%; 
-    max-width: 100%; 
+    width: 100%;
+    max-width: 100%;
     height: auto;
 }
-	
+
 
 
 /* ==============================
@@ -276,62 +332,99 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
-.logo {
-    float: left;
-    display: block;
-}
+    .logo {
+        float: left;
+        display: block;
+    }
 
-nav li {
-    float: right;
-}
+    nav li {
+        float: right;
+    }
 
-ul .hamburger-menu-button {
-    display: none;
-}
+    ul .hamburger-menu-button {
+        display: none;
+    }
 
-ul .menu-item {
-    display: block;
-    padding: 0 30px;
-    padding: 0 30px;
-    font-weight: 400;
-    list-style-type:none;
-}
+    ul .menu-item {
+        display: block;
+        padding: 0 30px;
+        padding: 0 30px;
+        font-weight: 700;
+        list-style-type: none;
+    }
 
-h1 {
-    font-size: 3.4em;
-    font-weight: 700;
-}
+    h1 {
+        font-size: 2.2em;
+        font-weight: 700;
+    }
 
-.text1 {
-    margin-left: auto;
-    margin-right: auto;
-}
+    h2 {
+        font-size: 1.9em;
+        font-weight: 700
+    }
 
-.text2 {
-    margin-left: auto;
-    margin-right: auto;
-}
+    h3 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 0;
+    }
 
-#my-work-section h2 {
-    margin-left: auto;
-    margin-right: auto;
-}
+    span {
+        font-size: 1.3em;
+    }
 
-.my-story {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .text1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.picture-profile {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .text2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.container3 {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
+    #my-work-section h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-story {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 30px;
+        max-width: 500px;
+    }
+
+    .picture-profile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-profile {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 10px;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
 
 }
 
@@ -339,32 +432,16 @@ h1 {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    .container1 {
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-start;
+
+    h1 {
+        font-size: 3.4em;
+        font-weight: 700;
     }
-    
-    .container2 {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    
-    .container-profile {
-        display: flex;
-        justify-content: center;
-        align-content: flex-start;
-        margin: 10px;
-    }
-    .container3 {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px;
-    }
+
+
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
